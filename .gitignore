@@ -1,2 +1,4 @@
 test_env/
 test_env/*
+__pycache__/
+__pycache__/*

@@ -1,2 +1,2 @@
-# api for carprice prediction applicatin
+# api for car price prediction application
 ## technology used: djanog-rest-framework django

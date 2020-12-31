@@ -1,8 +1,12 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
-class User(AbstractUser):
-  
-        def __str__(self):
-            return self.username
+class Dataset(models.Model):
+    yop = models.IntegerField()
+    sp = models.IntegerField()
+    dist = models.IntegerField()
+    owners = models.IntegerField()
+    fuel = models.CharField(max_length = 20, default = 'petrol')
+    owner_type = models.CharField(max_length = 20, default ='individual')
+    transmission = models.CharField(max_length = 20, default = 'manual')
+
